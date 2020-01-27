@@ -1,3 +1,13 @@
+require('dotenv').config()
+const {
+  API_KEY,
+  AUTH_DOMAIN,
+  DATABASE_URL,
+  PROJECT_ID,
+  STORAGE_BACKET,
+  MANAGING_SENDER_ID
+} = process.env;
+
 export default {
   mode: 'universal',
   /*
@@ -33,7 +43,8 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/dotenv'
   ],
   /*
    ** Nuxt.js modules
@@ -59,5 +70,13 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  dotenv: {
+    API_KEY,
+    AUTH_DOMAIN,
+    DATABASE_URL,
+    PROJECT_ID,
+    STORAGE_BACKET,
+    MANAGING_SENDER_ID
   }
 }
