@@ -25,16 +25,18 @@
   </div>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
+<script lang="ts">
 
-export default {
-  components: {
-    Logo
+import Vue from 'Vue'
+
+// Redirect
+export default Vue.extend({
+  fetch({ redirect }) {
+    redirect(301, '/73')
   }
-}
-</script>
+})
 
+</script>
 <style>
 .container {
   margin: 0 auto;
