@@ -99,6 +99,7 @@ export default {
     top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 0;
   }
   .Ichikosai_73_Logo_Formal_Cliped {
     width: 303px;
@@ -135,7 +136,8 @@ export default {
   }
   #header {
     position: absolute;
-    top: 0px
+    top: 0px;
+    z-index: 1;
   }
   #background-path-1 {
     top: 67%;
