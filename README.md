@@ -2,7 +2,7 @@
 
 ![Firebase CI](https://github.com/tsuchiura-1st-hs-ec/Ichikosai-Website/workflows/Firebase%20CI/badge.svg)
 
-![Ichikosai 73rd Logomark](http://drive.google.com/uc?export=view&id=1MjOrehHYhqRF-N_4SCpYJJ2MvN5RaOQ1)
+![Ichikosai 73rd Logomark](http://drive.google.com/uc?export=view&id=1yf04Bm6IfND-TozqQ9mVJrYxtT7mrwXM)
 
 The source codes of Ichikosai Website. This project is on Denshi-Tsushin (electronic communication) club.
 
