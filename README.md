@@ -1,5 +1,6 @@
 # Ichikosai-Website
 
+![Firebase CI](https://github.com/tsuchiura-1st-hs-ec/Ichikosai-Website/workflows/Firebase%20CI/badge.svg)
 > The source codes of Ichikosai Website. This project is on Denshi-Tsushin (electronic communication) club.
 
 ## Build Setup
