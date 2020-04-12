@@ -26,16 +26,14 @@
 </template>
 
 <script lang="ts">
-
 import Vue from 'Vue'
 
 // Redirect
 export default Vue.extend({
-  fetch({ redirect }) {
+  fetch ({ redirect }) {
     redirect(301, '/73')
   }
 })
-
 </script>
 <style>
 .container {
@@ -48,8 +46,8 @@ export default Vue.extend({
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
