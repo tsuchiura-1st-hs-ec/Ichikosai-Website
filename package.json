@@ -1,7 +1,7 @@
 {
   "name": "Ichikosai-Website",
   "version": "1.0.0",
-  "description": "The source codes of Ichikosai Website. This project is on Denshi-Tsushin (electronic communication) club.",
+  "description": "The website of Ibaraki Prefectural Tsuchiura First High School Festival.",
   "author": "Yuzuki Arai",
   "private": true,
   "scripts": {
