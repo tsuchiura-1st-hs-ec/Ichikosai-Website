@@ -72,9 +72,9 @@
 <script>
 // import Post from '~/components/73/Post.vue'
 import Header from '~/components/73/header.vue'
-import { createClient } from '~/plugins/contentful.js'
+// import { createClient } from '~/plugins/contentful.js'
 
-const client = createClient()
+// const client = createClient()
 
 export default {
   components: {
