@@ -81,24 +81,24 @@ export default {
     // Post,
     Header
   },
-  asyncData ({ env }) {
-    return Promise.all([
-      client.getEntries({
-        'sys.id': env.CTF_PERSON_ID
-      }),
-      client.getEntries({
-        content_type: env.CTF_BLOG_POST_TYPE_ID,
-        order: '-sys.createdAt'
-      })
-    ])
-      .then(([entries, posts]) => {
-        return {
-          person: entries.items[0],
-          posts: posts.items
-        }
-      })
-      .catch(console.error)
-  },
+  // asyncData ({ env }) {
+  //   return Promise.all([
+  //     client.getEntries({
+  //       'sys.id': env.CTF_PERSON_ID
+  //     }),
+  //     client.getEntries({
+  //       content_type: env.CTF_BLOG_POST_TYPE_ID,
+  //       order: '-sys.createdAt'
+  //     })
+  //   ])
+  //     .then(([entries, posts]) => {
+  //       return {
+  //         person: entries.items[0],
+  //         posts: posts.items
+  //       }
+  //     })
+  //     .catch(console.error)
+  // },
   head () {
     return {
       title: '一高祭 - 第73回茨城県立土浦第一高等学校文化祭',
