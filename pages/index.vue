@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import Vue from 'Vue'
+import Vue from 'vue'
 
 // Redirect
 export default Vue.extend({
