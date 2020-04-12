@@ -1,4 +1,11 @@
 require('dotenv').config()
+const {
+  CTF_SPACE_ID,
+  CTF_CDA_ACCESS_TOKEN,
+  CTF_PERSON_ID,
+  CTF_BLOG_POST_TYPE_ID,
+  CTF_ENVIRONMENT
+} = process.env
 
 module.exports = {
   mode: 'spa',
@@ -63,10 +70,10 @@ module.exports = {
     }
   },
   env: {
-    CTF_SPACE_ID: process.env.CTF_SPACE_ID,
-    CTF_CDA_ACCESS_TOKEN: process.env.CTF_CDA_ACCESS_TOKEN,
-    CTF_PERSON_ID: process.env.CTF_PERSON_ID,
-    CTF_BLOG_POST_TYPE_ID: process.env.CTF_BLOG_POST_TYPE_ID,
-    CTF_ENVIRONMENT: process.env.CTF_ENVIRONMENT
+    CTF_SPACE_ID,
+    CTF_CDA_ACCESS_TOKEN,
+    CTF_PERSON_ID,
+    CTF_BLOG_POST_TYPE_ID,
+    CTF_ENVIRONMENT
   }
 }
