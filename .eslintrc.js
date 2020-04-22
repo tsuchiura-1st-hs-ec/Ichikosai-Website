@@ -19,5 +19,6 @@ module.exports = {
     'vue'
   ],
   rules: {
-  }
+  },
+  ignorePatterns: ["assets/fonts/*.js"]
 }
