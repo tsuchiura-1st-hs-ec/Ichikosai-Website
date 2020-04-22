@@ -4,53 +4,70 @@
       <Header />
     </div>
     <div class="index">
-      <img
-        src="~/assets/73/Ichikosai_73_Logo_Formal_Cliped.svg"
-        alt="Ichikosai_73_Logo_Formal_Cliped"
-        class="Ichikosai_73_Logo_Formal_Cliped"
-      />
-      <div>
-        <p id="date" class="time-and-date">
-          2020.5.30 - 31
-        </p>
-        <p id="time" class="time-and-date">
-          9:00 - 15:00
-        </p>
+      <div class="eye-catch">
+        <div class="eye-catch-items">
+          <img
+            src="~/assets/73/Ichikosai_73_Logo_Formal_Cliped.svg"
+            alt="Ichikosai_73_Logo_Formal_Cliped"
+            class="Ichikosai_73_Logo_Formal_Cliped"
+          />
+          <div>
+            <p id="date" class="time-and-date">
+              新型コロナウィルスの感染拡大を受け<br>本年度の一高祭は中止となりました｡
+            </p>
+            <div class="school-link">
+              <a href="http://www.tsuchiura1-h.ibk.ed.jp/">
+                茨城県立土浦第一高等学校ウェブサイト ＞
+              </a>
+            </div>
+          </div>
+          <div class="sns-links">
+            <a href="https://twitter.com/ichikosai">
+              <img
+                src="~/assets/73/Icon awesome-twitter@2x.png"
+                alt="一高祭公式ツイッターアカウント"
+                style="height: 26px; width: 32px;"
+              />
+            </a>
+            <a href="https://www.facebook.com/IchikosaiOfficial">
+              <img
+                src="~/assets/73/Icon awesome-facebook@2x.png"
+                alt="一高祭公式フェイスブックページ"
+                style="height: 31px; width: 31px;"
+              />
+            </a>
+            <a href="https://www.instagram.com/ichikosaiofficial/">
+              <img
+                src="~/assets/73/Icon awesome-instagram@2x.png"
+                alt="一高祭公式インスタグラムアカウント"
+                style="height: 28px; width: 28px;"
+              />
+            </a>
+            <a href="https://lin.ee/a4YaDxe">
+              <img
+                src="~/assets/73/Icon awesome-line@2x.png"
+                alt="一高祭ライン公式アカウント"
+                style="height: 28px; width: 28px;"
+              />
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="sns-links">
-        <a href="https://twitter.com/ichikosai">
-          <img
-            src="~/assets/73/Icon awesome-twitter@2x.png"
-            alt="一高祭公式ツイッターアカウント"
-            style="height: 26px; width: 32px;"
-          />
-        </a>
-        <a href="https://www.facebook.com/IchikosaiOfficial">
-          <img
-            src="~/assets/73/Icon awesome-facebook@2x.png"
-            alt="一高祭公式フェイスブックページ"
-            style="height: 31px; width: 31px;"
-          />
-        </a>
-        <a href="https://www.instagram.com/ichikosaiofficial/">
-          <img
-            src="~/assets/73/Icon awesome-instagram@2x.png"
-            alt="一高祭公式インスタグラムアカウント"
-            style="height: 28px; width: 28px;"
-          />
-        </a>
-        <a href="https://lin.ee/a4YaDxe">
-          <img
-            src="~/assets/73/Icon awesome-line@2x.png"
-            alt="一高祭ライン公式アカウント"
-            style="height: 28px; width: 28px;"
-          />
+      <div class="about">
+        <h2>
+          <span class="text-seiran">
+            <span class="text-sei">青</span>
+            <br>
+            <span class="text-ran">嵐</span>
+          </span>
+        </h2>
+        <p>
+          茨城県立土浦第一高等学校の文化祭である一高祭は、今年73回目を迎えます。テーマには爽やかな青春を象徴する「青嵐」を採用し、一高祭当日を迎えるために委員一同が準備に勤しんでいます｡
+        </p>
+        <a href="http://www.tsuchiura1-h.ibk.ed.jp/">
+          茨城県立土浦第一高等学校ウェブサイト ＞
         </a>
       </div>
-      <!-- <div>
-        <h2>お知らせ</h2>
-        <Post :posts="posts"></Post>
-      </div> -->
     </div>
     <div>
       <img
@@ -73,6 +90,7 @@
 // import Post from '~/components/73/Post.vue'
 import Header from '~/components/73/header.vue'
 // import { createClient } from '~/plugins/contentful.js'
+import '@/assets/fonts/Ro_Shino_Std_M.js'
 
 // const client = createClient()
 
@@ -112,19 +130,24 @@ export default {
     }
   }
 }
+
 </script>
 
 <style lang="css" scoped>
-.body {
+.eye-catch {
   height: 100vh;
-}
-.index {
   width: 100vw;
+}
+.eye-catch-items {
   position: absolute;
   top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
+  text-align: center;
+}
+.school-link {
+  padding-top: 10px;
 }
 .Ichikosai_73_Logo_Formal_Cliped {
   width: 303px;
@@ -134,6 +157,7 @@ export default {
 }
 .time-and-date {
   text-align: center;
+  font-feature-settings: "palt";
   color: #85aa49;
 }
 .sns-links {
@@ -143,6 +167,45 @@ export default {
 .sns-links img {
   height: 28px;
   margin: 0 8px;
+}
+.about {
+  text-align: center;
+  background-color: #83A749;
+  padding: 50px;
+  color: white;
+  background: linear-gradient(124deg, #83A749, #479F17, #179F7F, #239B68, #4EB297);
+  background-size: 1800% 1800%;
+  animation: rainbow 18s ease infinite;
+}
+.about h2 {
+  color: inherit;
+  text-align: center;
+  font-size: 60px;
+  font-family: ro-shino-std,serif;
+  font-weight: 400;
+  font-style: normal;
+  font-feature-settings: palt;
+  text-shadow: 0 0 10px white;
+  letter-spacing: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 50px;
+  line-height: 50px;
+  mix-blend-mode: luminosity;
+}
+.text-sei {
+  padding-right: 50px;
+}
+.text-ran {
+  padding-left: 50px;
+}
+.about p {
+  font-feature-settings: "palt";
+  text-align: justify;
+  text-justify: inter-ideograph;
+  margin-bottom: 30px;
+}
+.about a {
+  color: white;
 }
 .background {
   position: fixed;
@@ -160,7 +223,7 @@ export default {
   font: Regular 22px/30px SF Pro Display;
 }
 #header {
-  position: absolute;
+  position: sticky;
   top: 0px;
   z-index: 1;
 }
@@ -175,5 +238,10 @@ export default {
   left: 80%;
   width: 202px;
   height: 232px;
+}
+@keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
 }
 </style>
