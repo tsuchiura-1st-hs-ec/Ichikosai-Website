@@ -17,7 +17,7 @@
     "@nuxtjs/dotenv": "^1.4.0",
     "acorn": "^7.1.1",
     "bootstrap": "^4.5.2",
-    "bootstrap-vue": "^2.0.0",
+    "bootstrap-vue": "^2.16.0",
     "minimist": "^1.2.5",
     "nuxt": "^2.0.0"
   },
