@@ -13,7 +13,7 @@
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.12.1",
+    "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/dotenv": "^1.4.0",
     "acorn": "^8.0.1",
     "bootstrap": "^4.5.2",
