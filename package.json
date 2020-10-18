@@ -25,7 +25,7 @@
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^3.0.0",
     "babel-eslint": "^10.1.0",
-    "contentful": "^7.14.7",
+    "contentful": "^7.14.8",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.13.0",
     "eslint-config-standard": "^14.1.1",
