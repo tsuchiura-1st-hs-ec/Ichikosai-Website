@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/dotenv": "^1.4.0",
-    "acorn": "^8.1.1",
+    "acorn": "^8.2.1",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "minimist": "^1.2.5",
